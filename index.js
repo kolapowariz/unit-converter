@@ -5,12 +5,12 @@ document.querySelector('#submitButton').addEventListener('click', () => {
     temp = document.getElementById('inputEl').value;
     temp = Number(temp);
     temp = celsius(temp);
-    document.querySelector('#display').innerHTML = temp + ' C';
+    document.querySelector('#display').innerHTML = temp + ' °C';
   } else  if (document.querySelector('#fUnit').checked) {
     temp = document.getElementById('inputEl').value;
     temp = Number(temp);
     temp = fahrenheit(temp);
-    document.querySelector('#display').innerHTML = temp + ' F';
+    document.querySelector('#display').innerHTML = temp + ' °F';
   }
   else {
     alert('Please select a unit');
